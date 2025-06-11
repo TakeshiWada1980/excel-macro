@@ -48,6 +48,7 @@ class="toc-section-number">1</span> 第15回 技術実践セミナー</a>
 <ul>
 <li><a href="#注意事項" id="toc-注意事項"><span class="toc-section-number">1.1</span>
 注意事項</a></li>
+<li><a href="#概要" id="toc-概要"><span class="toc-section-number">1.2</span> 概要</a></li>
 </ul></li>
 <li><a href="#生成aiの利用準備" id="toc-生成aiの利用準備"><span class="toc-section-number">2</span>
 生成AIの利用準備</a>
@@ -67,8 +68,8 @@ class="toc-section-number">3.3</span> 準備 ② (VBAエディタの設定)</a><
 </ul></li>
 <li><a href="#アドインファイルの新規作成と登録" id="toc-アドインファイルの新規作成と登録"><span
 class="toc-section-number">4</span> アドインファイルの新規作成と登録</a></li>
-<li><a href="#生成aiにマクロを作成させる" id="toc-生成aiにマクロを作成させる"><span
-class="toc-section-number">5</span> 生成AIにマクロを作成させる</a>
+<li><a href="#生成aiを利用してマクロを生成" id="toc-生成aiを利用してマクロを生成"><span
+class="toc-section-number">5</span> 生成AIを利用してマクロを生成</a>
 <ul>
 <li><a href="#マクロ-vbaプログラム-の作成依頼プロンプト例-①"
 id="toc-マクロ-vbaプログラム-の作成依頼プロンプト例-①"><span class="toc-section-number">5.1</span>
@@ -85,18 +86,33 @@ class="toc-section-number">5.5</span> 追加したマクロをリボンに登録
 <li><a href="#さらにマクロを追加" id="toc-さらにマクロを追加"><span
 class="toc-section-number">5.6</span> さらにマクロを追加</a></li>
 </ul></li>
-<li><a href="#演習" id="toc-演習"><span class="toc-section-number">6</span> 演習</a></li>
+<li><a href="#演習個別質問対応" id="toc-演習個別質問対応"><span class="toc-section-number">6</span>
+演習＆個別質問対応</a>
+<ul>
+<li><a href="#プロンプト記述のポイント" id="toc-プロンプト記述のポイント"><span
+class="toc-section-number">6.1</span> プロンプト記述のポイント</a></li>
+</ul></li>
 <li><a href="#補足-マクロ有効ブックのオープン" id="toc-補足-マクロ有効ブックのオープン"><span
 class="toc-section-number">7</span> 補足: マクロ有効ブックのオープン</a></li>
 <li><a href="#補足-マクロを利用するときの注意点" id="toc-補足-マクロを利用するときの注意点"><span
 class="toc-section-number">8</span> 補足: マクロを利用するときの注意点</a></li>
+<li><a href="#おまけ-notebooklm-で音声概要を生成する方法"
+id="toc-おまけ-notebooklm-で音声概要を生成する方法"><span class="toc-section-number">9</span>
+おまけ: NotebookLM で音声概要を生成する方法</a>
+<ul>
+<li><a href="#手順1-3" id="toc-手順1-3"><span class="toc-section-number">9.1</span> 手順1</a></li>
+<li><a href="#手順2-3" id="toc-手順2-3"><span class="toc-section-number">9.2</span> 手順2</a></li>
+<li><a href="#手順3-3" id="toc-手順3-3"><span class="toc-section-number">9.3</span> 手順3</a></li>
+<li><a href="#手順4-1" id="toc-手順4-1"><span class="toc-section-number">9.4</span> 手順4</a></li>
+<li><a href="#手順5" id="toc-手順5"><span class="toc-section-number">9.5</span> 手順5</a></li>
+</ul></li>
 </ul> 
         <!-- ---------------------------------------- -->
       </div>
     </nav>
 
     <header class="markdown-body">
-      <p>産学連携推進会 第15回 技術実践セミナ－</p>
+      <p>公大高専 産学連携推進会 第15回 技術実践セミナ－</p>
       <p>2025年6月12日(木) 15:00-16:30</p>
     </header>
 
@@ -113,7 +129,7 @@ class="toc-section-number">8</span> 補足: マクロを利用するときの注
       <h2 data-number="1.1" id="注意事項"><span class="header-section-number">1.1</span>
       注意事項</h2>
       <ul>
-      <li>PC保護のため飲食は、廊下においてお願いします。
+      <li>PC などの機器保護のため、飲食は廊下においてお願いします。
       <ul>
       <li><strong>机上には「水筒」や「ペットボトル」を置かない</strong>ようにご協力をお願いします。</li>
       </ul></li>
@@ -125,19 +141,29 @@ class="toc-section-number">8</span> 補足: マクロを利用するときの注
       <img src="figs/qr.png" alt="img" />
       <figcaption aria-hidden="true">img</figcaption>
       </figure>
+      <h2 data-number="1.2" id="概要"><span class="header-section-number">1.2</span> 概要</h2>
+      <p>このセミナーの内容についての概要音声です。</p>
+      <audio controls>
+      <source src="summary.mp3" type="audio/mpeg">
+      </audio>
+      <p>このようなラジオ風の音声概要は、Googleの<a
+      href="https://notebooklm.google.com/">NotebookLM</a>というAIサービスを利用して簡単に生成することができます。Googleアカウント
+      (通常の無料アカウント) があれば、<strong>1日3回まで音声概要を生成すること</strong>ができます
+      (2025/06/11時点)。本資料の最後に<a
+      href="#おまけ-notebooklm-で音声概要を生成する方法">簡単な利用手順</a>を掲載しています。</p>
       <h1 data-number="2" id="生成aiの利用準備"><span class="header-section-number">2</span>
       生成AIの利用準備</h1>
-      <p>普段からご利用の生成AIサービスがございましたら、事前にウェブブラウザからログインしていただくようお願いします。なお、以下でご紹介する生成AIについては、アカウント登録なしでご利用いただけます。</p>
+      <p>普段からご利用の生成AIサービスがあれば、事前にウェブブラウザからログインしておいてください。なお、以下の生成AIについては、「アカウント登録なし」で利用することができます。</p>
       <ul>
       <li>ChatGPT <a href="https://openai.com/ja-JP/">https://openai.com/ja-JP/</a></li>
       <li>Gemini <a href="https://gemini.google.com">https://gemini.google.com</a></li>
       </ul>
       <h2 data-number="2.1" id="プロンプトを入力する際の注意点"><span
       class="header-section-number">2.1</span> プロンプトを入力する際の注意点</h2>
-      <p>このセミナーでは「生成AI」を利用します。生成AIに対して与える指示文を「プロンプト」と言います。</p>
+      <p>このセミナーでは「生成AI」を利用しますが、生成AIに対して与える指示文のことを「プロンプト」と言います。</p>
       <p>プロンプトを与える際に、入力ボックスのなかで「<strong>改行したいとき</strong>」は
-      <code>[Shift]+[Enter]</code> を使ってください。<code>[Enter]</code>
-      ではプロンプトの「<strong>送信</strong>」になってしまいます。</p>
+      <code>[Shift]+[Enter]</code> を使ってください。通常の <code>[Enter]</code>
+      入力ではプロンプトの「<strong>送信</strong>」になってしまいます。</p>
       <figure>
       <img src="figs/gai-01.png" alt="img" />
       <figcaption aria-hidden="true">img</figcaption>
@@ -149,7 +175,8 @@ class="toc-section-number">8</span> 補足: マクロを利用するときの注
       <li><code>[Enter]</code> で「<strong>改行</strong>」</li>
       <li><code>[Ctrl]+[Enter]</code> で「<strong>プロンプト送信</strong>」</li>
       </ul>
-      <p>…動作を切り替えたいときは、以下の拡張機能 (Chrome対応) が便利です。</p>
+      <p>…のようにデフォルト動作を切り替えたいときは、以下の<strong>拡張機能</strong> (Chrome対応)
+      が便利です。</p>
       <p><a
       href="https://chromewebstore.google.com/detail/chatgpt-ctrl+enter-sender/gbncgdhklmnckojlibfhdadpfbcdbnch">ChatGPT
       Ctrl+Enter Sender</a></p>
@@ -159,8 +186,8 @@ class="toc-section-number">8</span> 補足: マクロを利用するときの注
       Senderは、ChatGPTなどのサイトでメッセージを「Ctrl+Enter」で送信できるようにします。
       本来送信に使用されていたEnterキーで改行できるようになるため、誤ってEnterキーを押してメッセージを送信することがなくなります。</p>
       </blockquote>
-      <p>なお、セミナー会場の PC では、セキュティポリシーの都合上、<strong>Chrome
-      の拡張機能をインストールすることは「できません」</strong>。</p>
+      <p>なお、このセミナー会場の PC では、セキュティポリシーの都合上、Chrome
+      の拡張機能をインストールすることは「できません」。</p>
       </div>
       <h1 data-number="3" id="エクセルのマクロとは"><span class="header-section-number">3</span>
       エクセルの「マクロ」とは</h1>
@@ -174,15 +201,15 @@ class="toc-section-number">8</span> 補足: マクロを利用するときの注
       class="masked">小数点桁数を1に固定</span>) と条件付き書式 (例：<span
       class="masked">負の数は赤色表示</span>) を同時設定する</li>
       </ul>
-      <p>繰り返しの多い定型作業については、多少面倒でも面倒でもマクロを作成しておくことで長期的には「効率アップ」「ミス軽減」「ストレス軽減」となります。是非、積極的に利用してください。</p>
-      <p>なお、マクロとは「<strong>一連の操作や手続きを自動化するための命令の集まりや機能</strong>」をあらわす一般的な用語で、エクセルに限らず、「ワード」や「パワーポイント」などのオフィス製品でも同様に設定・利用ができます。</p>
+      <p>繰り返しの多い定型作業については、多少面倒であってもマクロを作成しておくことで、長期的には「効率アップ」「ミス軽減」「ストレス軽減」につながります。是非、積極的に利用してみてください。</p>
+      <p>なお、マクロとは「<strong>一連の操作や手続きを自動化する仕組み</strong>」を指すコンピュータ用語で、エクセルに限らず、「ワード」や「パワーポイント」などのマイクロソフトオフィス製品でも同様に設定・利用ができます。</p>
       <p><strong>(プロンプト例)</strong></p>
       <blockquote>
-      <p>エクセ以外にも、ワードやパワーポイントでもマクロが利用できると聞いたのですが本当ですか？総務関連の業務を想定したとき、どのようなことをワードでマクロ化すると便利そうですか？</p>
+      <p>エクセル以外にも、ワードやパワーポイントでも「マクロ」が利用できると聞いたのですが本当ですか？総務関連の業務を想定したとき、どのようなことをワードでマクロ化すると便利そうですか？</p>
       </blockquote>
       <h2 data-number="3.1" id="マクロを作成する方法"><span class="header-section-number">3.1</span>
       マクロを作成する方法</h2>
-      <p>マクロの実体は、「<strong>VBA (Visual Basic for
+      <p>マクロの実体は、「<strong>VBA (＝Visual Basic for
       Applications)</strong>」というプログラミング言語で書かれたプログラムとなっています。</p>
       <p>エクセルでは、次のいずれかの方法でマクロを作成することができます。</p>
       <p><strong>【方法1】</strong>
@@ -209,6 +236,13 @@ class="toc-section-number">8</span> 補足: マクロを利用するときの注
       <strong>リボンにボタンを配置して、そこからマクロを呼び出す方法</strong>
       などを中心にハンズオン形式 (＝実際の操作を体験する形式) で学んでいきます。</p>
       <p>あわせて、トラブルの少ないマクロを安定して生成するためのプロンプトの書き方（雛形付き）についても紹介していきます。</p>
+      <p><strong>(プロンプト例)</strong></p>
+      <blockquote>
+      <p>VBAとマクロの違いって何ですか？いまいち分かりません。</p>
+      </blockquote>
+      <blockquote>
+      <p>エクセルの「マクロの記録」を使って作成したマクロは、「実行条件が少し変わるだけで意図どおりに動かなくなったり、余計な操作まで記録されてしまったりする」と聞いたいのですが、どういうことですか？</p>
+      </blockquote>
       <h2 data-number="3.2" id="準備-①-エクセルのリボン設定"><span
       class="header-section-number">3.2</span> 準備 ① (エクセルのリボン設定)</h2>
       <p>初回のみ必要な設定です。</p>
@@ -217,8 +251,13 @@ class="toc-section-number">8</span> 補足: マクロを利用するときの注
       <img src="figs/excel-02.png" alt="img" />
       <figcaption aria-hidden="true">img</figcaption>
       </figure>
-      <p>デフォルト状態 (標準状態・初期状態)
-      のエクセルでは、<strong>「開発」タブが非表示になっていることが多いの</strong>で、まずは、これが表示されるように設定変更していきます。</p>
+      <p>デフォルト状態 (標準状態・初期状態) のエクセルでは
+      <strong>「開発」タブが非表示になっていることが多い</strong>
+      ので、まずは、これが表示されるように設定変更していきます。</p>
+      <p><strong>(プロンプト例)</strong></p>
+      <blockquote>
+      <p>「エクセルの開発タブのなかから…」と指示されたのですが、「ホーム」や「挿入」はありますが「開発」なんてありません。</p>
+      </blockquote>
       <h3 data-number="3.2.1" id="手順1"><span class="header-section-number">3.2.1</span> 手順1</h3>
       <p>エクセルを起動し、(必要に応じて「空白のブック」を選択したあとに)
       メニューバーの「<strong>ファイル</strong>」から「<strong>オプション</strong>」を選択してください。</p>
@@ -226,18 +265,23 @@ class="toc-section-number">8</span> 補足: マクロを利用するときの注
       <img src="figs/excel-09.png" alt="img" />
       <figcaption aria-hidden="true">img</figcaption>
       </figure>
-      <p>全画面表示でない場合は「<strong>オプション</strong>」の項目が隠れているので、「<strong>ファイル</strong>」から「<strong>その他…</strong>」を選択して「<strong>オプション</strong>」を選択してください。</p>
+      <p>エクセルウィンドウを最大化していない場合は「<strong>オプション</strong>」の項目が隠れているので、「<strong>ファイル</strong>」から「<strong>その他…</strong>」を選択して「<strong>オプション</strong>」を選択してください。</p>
+      <figure>
+      <img src="figs/excel-12.png" alt="img" />
+      <figcaption aria-hidden="true">img</figcaption>
+      </figure>
       <h3 data-number="3.2.2" id="手順2"><span class="header-section-number">3.2.2</span> 手順2</h3>
-      <p>「Excelのオプション」というダイアログが表示されるので、左パネルから「<strong>リボンのユーザ設定</strong>」を選択して、以下のように「<strong>開発</strong>」という項目にチェックを入れてください。</p>
+      <p>「<strong>Excelのオプション</strong>」というダイアログが表示されるので、左パネルから「<strong>リボンのユーザ設定</strong>」を選択して、以下のように「<strong>開発</strong>」という項目にチェックを入れてください。</p>
       <figure>
       <img src="figs/excel-03.png" alt="img" />
       <figcaption aria-hidden="true">img</figcaption>
       </figure>
       <h3 data-number="3.2.3" id="手順3"><span class="header-section-number">3.2.3</span> 手順3</h3>
-      <p>ダイアログを閉じて、画面上部のタブに「<strong>開発</strong>」が表示されていることを確認してください。この設定により、次回起動時にも「<strong>開発</strong>」タブが自動的に表示されるようになります。</p>
+      <p>ダイアログを閉じて、画面上部のタブに「<strong>開発</strong>」が表示されていることを確認してください。この設定により、次回のエクセル起動時にも「<strong>開発</strong>」タブが自動的に表示されるようになります。</p>
       <h2 data-number="3.3" id="準備-②-vbaエディタの設定"><span
       class="header-section-number">3.3</span> 準備 ② (VBAエディタの設定)</h2>
-      <p>生成AIから出力したVBAプログラムを貼付ける「<strong>VBAエディタ</strong>」の基本設定をしてきます。これも初回のみ必要な設定となります。</p>
+      <p>生成AIで生成したVBAプログラムを貼り付けるための「<strong>VBAエディタ</strong>」の基本設定をしてきます。これも
+      <strong>初回のみ必要な設定</strong> となります。</p>
       <p>「<strong>開発</strong>」タブから「<strong>Visual
       Basic</strong>」のアイコンをクリックしてください。</p>
       <figure>
@@ -245,14 +289,14 @@ class="toc-section-number">8</span> 補足: マクロを利用するときの注
       <figcaption aria-hidden="true">img</figcaption>
       </figure>
       <p>「<strong>Visual
-      Basic</strong>」のアイコンをクリックすると、以下のようなVBAプログラムを貼付けたり、マクロの実行テストをするためのウィンドウが起動します。</p>
+      Basic</strong>」のアイコンをクリックすると、以下のようなVBAプログラムを貼り付けたり、マクロの動作テストをするためのウィンドウが起動します。</p>
       <figure>
       <img src="figs/excel-05.png" alt="img" />
       <figcaption aria-hidden="true">img</figcaption>
       </figure>
       <p>以降、このウィンドウを「<strong>VBAエディタ</strong>」と呼びます。VBAエディタは
       <code>[Alt]+[F11]</code> のショートカットキーからも呼び出すこともできます。</p>
-      <p>以下、「VBAエディタ」の設定を変更していきます。</p>
+      <p>以下、「VBAエディタ」を使いやすいように設定変更していきます。</p>
       <h3 data-number="3.3.1" id="手順1-1"><span class="header-section-number">3.3.1</span>
       手順1</h3>
       <p>VBAエディタのメニューバーから「<strong>ツール</strong>」、「<strong>オプション</strong>」を選択してください。</p>
@@ -262,7 +306,7 @@ class="toc-section-number">8</span> 補足: マクロを利用するときの注
       </figure>
       <h3 data-number="3.3.2" id="手順2-1"><span class="header-section-number">3.3.2</span>
       手順2</h3>
-      <p>「<strong>オプション</strong>」ダイアログの「<strong>編集</strong>」タブの設定を次のように設定してください。</p>
+      <p>「<strong>オプション</strong>」ダイアログの「<strong>編集</strong>」タブのなかの設定を次のように変更して、「<strong>OK</strong>」を押下してください。</p>
       <figure>
       <img src="figs/excel-06.png" alt="img" />
       <figcaption aria-hidden="true">img</figcaption>
@@ -270,25 +314,34 @@ class="toc-section-number">8</span> 補足: マクロを利用するときの注
       <h3 data-number="3.3.3" id="手順3-1"><span class="header-section-number">3.3.3</span>
       手順3</h3>
       <p>VBAエディタの <strong>画面レイアウト</strong>
-      を次のように「<strong>プロジェクトエクスプローラ</strong>」と「<strong>イミディエイトウィンドウ</strong>」だけが表示されるように変更していきます。</p>
+      を次のように「<strong>プロジェクトエクスプローラ</strong>」と「<strong>イミディエイトウィンドウ</strong>」だけが表示されるように設定していきます。</p>
       <figure>
       <img src="figs/excel-07.png" alt="img" />
       <figcaption aria-hidden="true">img</figcaption>
       </figure>
       <p>デフォルト状態のVBAエディタに表示されている余計なウィンドウ群は、<i class="fa-solid fa-rectangle-xmark"></i>
       ボタンで閉じてください。デフォルトでは「<strong>プロパティウィンドウ</strong>」が表示されていると思うので、これを閉じます。</p>
-      <p>また、不足してウィンドウがあれば、メニューの「<strong>表示</strong>」から項目を選んで表示してください。デフォルト状態では「<strong>イミディエイトウィンドウ</strong>」が非表示になっている可能性があります。</p>
+      <p>また、不足しているウィンドウ (表示されていないウィンドウ)
+      があれば、メニューの「<strong>表示</strong>」から対象を選んで表示してください。デフォルト状態では「<strong>イミディエイトウィンドウ</strong>」が非表示になっている可能性があります。</p>
       <figure>
       <img src="figs/excel-08.png" alt="img" />
       <figcaption aria-hidden="true">img</figcaption>
       </figure>
-      <p>以上の設定が完了したらVBAエディタを閉じて、Excel本体も、一旦、完全終了してください。</p>
+      <p>以上の設定が完了したらVBAエディタを閉じて、<strong>エクセル本体も、一旦、完全終了してください</strong>。</p>
       <h1 data-number="4" id="アドインファイルの新規作成と登録"><span
       class="header-section-number">4</span> アドインファイルの新規作成と登録</h1>
       <p>エクセルのマクロは、個別のエクセルファイル (ブック) に記述することも、エクセル本体
       (より正確には<strong>アドイン</strong>) に記述することもできます。</p>
       <p><strong>【個別のエクセルファイルに記述したマクロ】</strong>は、基本的にそのファイルのなかでしか使用できません（またファイルは「<strong>マクロ有効ブック</strong>」として保存する必要があります）。</p>
       <p>一方、<strong>【アドインとして登録したマクロ】</strong>は、どのファイルからでも呼びだすことができて、マクロを含まない通常のファイル形式のまま作業を行なうことができます。</p>
+      <p><strong>(プロンプト例)</strong></p>
+      <blockquote>
+      <p>個々のエクセルブック (ファイル) に記述するマクロと、アドイン (ファイル)
+      に記述するマクロって何が違うのですか？</p>
+      </blockquote>
+      <blockquote>
+      <p>エクセルのアドインって何ですか？「これからアドインにマクロを書いていく方法を解説します」って言われたのですが…</p>
+      </blockquote>
       <div class="note type-caution">
       <p><strong>マクロ有効ブックとは</strong></p>
       <p>マクロを含むエクセルファイルは、必ず <strong>マクロ有効ブック</strong>
@@ -307,7 +360,11 @@ class="toc-section-number">8</span> 補足: マクロを利用するときの注
       <p>アドインとは「<strong>よく使うマクロをエクセルに「常備」しておくための仕組み</strong>」です。以下、<strong>アドイン専用ファイル</strong>
       (<code>*.xlam</code>)
       にマクロを記述して、エクセルの起動時にそれらが自動で読み込まれるように設定していきます。</p>
-      <p>これも、基本的に初回のみ必要な作業になります。</p>
+      <p><strong>(プロンプト例)</strong></p>
+      <blockquote>
+      <p>エクセルのアドインファイルって、起動時に自動で読み込まれるのですか？保存場所などは決まっていますか？</p>
+      </blockquote>
+      <p>以下の手順も、基本的に初回のみ必要な操作になります。</p>
       <h3 data-number="4.0.1" id="手順1-2"><span class="header-section-number">4.0.1</span>
       手順1</h3>
       <p>全てのエクセル (ファイルやウィンドウ)
@@ -316,7 +373,7 @@ class="toc-section-number">8</span> 補足: マクロを利用するときの注
       (何らかのファイルをダブルクリックして起動するのではなく、スタートボタンやタスクバーからエクセルを起動してください)。</p>
       <h3 data-number="4.0.2" id="手順2-2"><span class="header-section-number">4.0.2</span>
       手順2</h3>
-      <p>エクセルが起動したら、以下のように「<strong>新規</strong>」から「<strong>空白ブック</strong>」をクリックしてください。なお、起動時に自動で空白のブックが新規作成される設定になっている場合は、この操作は不要です
+      <p>エクセルが起動したら、以下のように「<strong>新規</strong>」から「<strong>空白ブック</strong>」を選択してください。なお、「起動時に自動で空白のブックが新規作成される設定」になっている場合は、この操作は不要です
       (次の手順に進んでください)。</p>
       <figure>
       <img src="figs/excel-addin-01.png" alt="img" />
@@ -337,21 +394,23 @@ class="toc-section-number">8</span> 補足: マクロを利用するときの注
       <img src="figs/excel-04.png" alt="img" />
       <figcaption aria-hidden="true">img</figcaption>
       </figure>
-      <p>以下のように「<strong>プロジェクト</strong>」ウィンドウのなかの「<strong>VBAProject
-      (Book1)</strong>」を右クリックして、「<strong>挿入</strong>」-「<strong>標準モジュール</strong>」を選択してください。</p>
+      <p>VBAエディタにおいて、以下のように「<strong>プロジェクト</strong>」ウィンドウのなかの「<strong>VBAProject
+      (Book1)</strong>」を <strong>右クリック</strong>
+      して、「<strong>挿入</strong>」-「<strong>標準モジュール</strong>」を選択してください。</p>
       <figure>
       <img src="figs/excel-addin-03.png" alt="img" />
       <figcaption aria-hidden="true">img</figcaption>
       </figure>
       <p>以下のように「標準モジュール」のなかに「<strong>Module1</strong>」という領域
       (＝VBAプログラムを記述する箇所) が作成されます。また「Book1
-      Module1」というコードウィンドウが開きます。コードウィンドウには <code>Option Explicit</code>
-      と記述されています (あとで、これにつづけて VBA プログラムを貼付けます)。</p>
+      Module1」という「<strong>コードウィンドウ</strong>」が開きます。コードウィンドウには
+      <code>Option Explicit</code> と記述されています (あとで、これにつづけて VBA
+      プログラムを貼り付けます)。</p>
       <figure>
       <img src="figs/excel-addin-04.png" alt="img" />
       <figcaption aria-hidden="true">img</figcaption>
       </figure>
-      <p>上記のようにウィンドウが最大化されていない場合は、「コード」ウィンドウの上部を
+      <p>上図のようにウィンドウが最大化されていないとき、「コード」ウィンドウの上部を
       <strong>ダブルクリック</strong>
       するとウィンドウが最大化されます。以下、最大化した状態で作業をしてください。</p>
       <figure>
@@ -359,36 +418,38 @@ class="toc-section-number">8</span> 補足: マクロを利用するときの注
       <figcaption aria-hidden="true">img</figcaption>
       </figure>
       <h3 data-number="4.0.4" id="手順4"><span class="header-section-number">4.0.4</span> 手順4</h3>
-      <p>このコードウィンドウのなかの <code>Option Explicit</code>
-      につづけて、<strong>生成AIで作成したVBAプログラム</strong> を追記していきます。</p>
-      <p>まずは、練習のために以下の「VBAプログラム」を貼付けてみてください。</p>
-      <div class="sourceCode" id="cb1" data-caption="A1に乱数を書き込む処理"><pre
+      <p>コードウィンドウのなかの <code>Option Explicit</code>
+      以降の行に、<strong>生成AIで作成したVBAプログラム</strong> を追記していきます。</p>
+      <p>まずは、練習のために以下の「VBAプログラム」を貼り付けてみてください。</p>
+      <div class="sourceCode" id="cb1" data-caption="セルA1に乱数を書き込む処理"><pre
       class="sourceCode numberSource vb numberLines"><code class="sourceCode monobasic"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">Public</span> <span class="kw">Sub </span>A1に乱数を書き込む処理()</span>
 <span id="cb1-2"><a href="#cb1-2"></a>    </span>
 <span id="cb1-3"><a href="#cb1-3"></a>    <span class="co">&#39; アクティブシートのA1セルに乱数（0～10）を書き込み</span></span>
 <span id="cb1-4"><a href="#cb1-4"></a>    ActiveSheet.Range(<span class="st">&quot;A1&quot;</span>).Value = Int(Rnd * 11)</span>
 <span id="cb1-5"><a href="#cb1-5"></a>    </span>
 <span id="cb1-6"><a href="#cb1-6"></a><span class="kw">End Sub</span></span></code></pre></div>
-      <p>以下のように、<code>Option Explicit</code> を <strong>上書きしないように</strong>
-      を貼付けてください。</p>
+      <p>この際、<code>Option Explicit</code> を <strong>上書きしないように</strong>
+      (消さないように) 貼り付けてください。以下のようになればOKです。</p>
       <figure>
       <img src="figs/excel-addin-06.png" alt="img" />
       <figcaption aria-hidden="true">img</figcaption>
       </figure>
-      <h3 data-number="4.0.5" id="手順5"><span class="header-section-number">4.0.5</span> 手順5</h3>
+      <h3 data-number="4.0.5" id="手順5アドインファイルとして保存"><span
+      class="header-section-number">4.0.5</span> 手順5：アドインファイルとして保存</h3>
       <p>これを <strong>アドインファイル</strong>
       として保存していきます。アドインは、原則として以下のパス (位置)
       に保存します。<code>xxxx</code>
       の部分は、皆さんのユーザ名に置き換えてください。セミナー会場のPCを利用している場合は
       <code>gs01</code> や <code>gs05</code> がユーザ名になります。</p>
       <pre><code>C:\Users\xxxx\AppData\Roaming\Microsoft\AddIns</code></pre>
-      <p>上記に配置することで、エクセルを起動したときに自動で読み込まれることになります。</p>
+      <p>上記の位置に <strong>アドインファイル</strong> (<code>*.xlam</code>)
+      を配置することで、エクセル起動時に自動で読み込まれるようになります。</p>
       <p>まずは、VBAエディタの「<strong>保存ボタン</strong>」を押下してください。</p>
       <figure>
       <img src="figs/excel-addin-20.png" alt="img" />
       <figcaption aria-hidden="true">img</figcaption>
       </figure>
-      <p>次のように「名前を付けて保存」のダイアログが表示されるので、まずは「ファイルの種類」を「<strong>Excel
+      <p>次のように「<strong>名前を付けて保存</strong>」のダイアログが表示されるので、まずは「ファイルの種類」を「<strong>Excel
       アドイン(<code>*.xlam</code>)</strong>」に変更してください
       (ドロップダウンリストの下部のほうにあります)。</p>
       <p>ファイルの種類を変更すると「保存先」が自動で
@@ -398,9 +459,10 @@ class="toc-section-number">8</span> 補足: マクロを利用するときの注
       <figcaption aria-hidden="true">img</figcaption>
       </figure>
       <p>ファイル名を <span class="masked">マイアドイン.xlam</span>
-      に書き換えてからて、ダイアログの右下の「保存」を押下してください。</p>
-      <p>以上でアドインとしての設定は完了です。つづいて、正しく設定できているかを確認していきます。</p>
-      <h3 data-number="4.0.6" id="手順6"><span class="header-section-number">4.0.6</span> 手順6</h3>
+      のように書き換えてから、ダイアログの右下の「保存」を押下してください。</p>
+      <p>以上でアドインとしての設定は完了です。つづいて、これらの設定が正しくできているかを確認していきます。</p>
+      <h3 data-number="4.0.6" id="手順6アドインファイルの自動読込みの確認"><span
+      class="header-section-number">4.0.6</span> 手順6：アドインファイルの自動読込みの確認</h3>
       <p>一旦、エクセルを完全終了してください。</p>
       <p>つづいて、エクセルを起動して「<strong>新規</strong>」から「<strong>空白のブック</strong>」を選択してください。さらに「<strong>ファイル</strong>」から「<strong>オプション</strong>」を選択してください。</p>
       <figure>
@@ -417,26 +479,28 @@ class="toc-section-number">8</span> 補足: マクロを利用するときの注
       </figure>
       <p>この「マイアドイン」をアクティブに変更 (有効化) するために、「設定」のボタンを押下 (❸)
       してください。</p>
-      <h3 data-number="4.0.7" id="手順7"><span class="header-section-number">4.0.7</span> 手順7</h3>
+      <h3 data-number="4.0.7" id="手順7アドインの有効化"><span
+      class="header-section-number">4.0.7</span> 手順7：アドインの有効化</h3>
       <p>「<strong>マイアドイン</strong>」にチェックを入れて「<strong>OK</strong>」を押下してください。</p>
       <figure>
       <img src="figs/excel-addin-09.png" alt="img" />
       <figcaption aria-hidden="true">img</figcaption>
       </figure>
-      <h3 data-number="4.0.8" id="手順8"><span class="header-section-number">4.0.8</span> 手順8</h3>
+      <h3 data-number="4.0.8" id="手順8アドインマクロをリボンに登録"><span
+      class="header-section-number">4.0.8</span> 手順8：アドインマクロをリボンに登録</h3>
       <p>マイアドインのなかの「<strong>A1に乱数を書き込む処理</strong>」というマクロを、以下のようにエクセルのリボンから「ワンクリック」で呼び出せるように設定していきます。</p>
       <figure>
       <img src="figs/excel-addin-21.png" alt="img" />
       <figcaption aria-hidden="true">img</figcaption>
       </figure>
-      <p>「ホーム」タブの右隣に「マクロ」タブを作成して、そこに配置していきます。「Excelのオプション」ダイアログから、「<strong>リボンのユーザ設定</strong>」を選択(➊)してください。</p>
+      <p>「ホーム」タブの右隣に、「<strong>マクロ</strong>」というタブを新規作成して、そこにマクロ実行のアイコンを配置していきます。「Excelのオプション」ダイアログから、「<strong>リボンのユーザ設定</strong>」を選択(➊)してください。</p>
       <p>つづいて、次のように「<strong>ホーム</strong>」を選択(❷)します
       (ホームのチェックボックスを反転させないように注意してください)。そして「<strong>新しいタブ</strong>」のボタンを押下(❸)してください。</p>
       <figure>
       <img src="figs/excel-addin-10.png" alt="img" />
       <figcaption aria-hidden="true">img</figcaption>
       </figure>
-      <p>次のように「ホーム」の下に「<strong>新しいタブ(ユーザー設定)</strong>」が追加される(➊)ので、「名前を変更」のボタン押下して…</p>
+      <p>次のように「ホーム」の下に「<strong>新しいタブ(ユーザー設定)</strong>」が追加される(➊)ので、「<strong>名前の変更</strong>」のボタン押下して…</p>
       <ul>
       <li>「<strong>新しいタブ(ユーザー設定)</strong>」を「<strong>マクロ(ユーザー設定)</strong>」に名前変更してください。</li>
       <li>「<strong>新しいグループ(ユーザー設定)</strong>」を「<strong>練習(ユーザー設定)</strong>」に名前変更してください。</li>
@@ -455,7 +519,7 @@ class="toc-section-number">8</span> 補足: マクロを利用するときの注
       <p>先の手順で追加したリボンのなかに、マクロの呼び出しボタンを設定していきます。</p>
       <p>まずは「<strong>練習(ユーザー設定)</strong>」を選択(➊)して、コマンド選択のドロップダウンリストを「<strong>マクロ</strong>」に切り替えます(❷)。</p>
       <p>このようにすると、先ほど有効化したアンドイン (マイアドイン.xlam)
-      に含まれるマクロが表示されるので、「<strong>A1に乱数を書き込む処理</strong>」を選んで(❸)、「<strong>追加(A)&gt;&gt;</strong>」ボタンを押下(❹)します。</p>
+      に記述されているマクロ一覧が表示されるので、「<strong>A1に乱数を書き込む処理</strong>」を選んで(❸)、「<strong>追加(A)&gt;&gt;</strong>」ボタンを押下(❹)します。</p>
       <figure>
       <img src="figs/excel-addin-13.png" alt="img" />
       <figcaption aria-hidden="true">img</figcaption>
@@ -467,21 +531,22 @@ class="toc-section-number">8</span> 補足: マクロを利用するときの注
       <figcaption aria-hidden="true">img</figcaption>
       </figure>
       <p>ダイアログ右下の「OK」ボタンを押下して、「Excelのオプション」ダイアログを終了してください。</p>
-      <h3 data-number="4.0.10" id="手順10"><span class="header-section-number">4.0.10</span>
-      手順10</h3>
+      <h3 data-number="4.0.10" id="手順10動作確認"><span class="header-section-number">4.0.10</span>
+      手順10：動作確認</h3>
       <p>以上で、設定は完了です。マクロのタブから「<strong>A1に乱数を書き込む処理</strong>」をクリックしてみてください。</p>
       <figure>
       <img src="figs/excel-addin-15.png" alt="img" />
       <figcaption aria-hidden="true">img</figcaption>
       </figure>
       <ul>
-      <li>エクセルを閉じて、再度開いたときも、同様にマクロが呼び出せることを確認してください。</li>
-      <li>任意のエクセルファイルを開いているとき、そのファイル (ブック・シート)
-      を対象にマクロが機能することを確認してください。</li>
+      <li>エクセルを完全に閉じて、<strong>再度起動したときも、同様にマクロが呼び出せること</strong>
+      を確認してください。</li>
+      <li><strong>任意のエクセルファイルを開いて、そのファイル (ブック・シート)
+      を対象にマクロが機能すること</strong> を確認してください。</li>
       </ul>
-      <h1 data-number="5" id="生成aiにマクロを作成させる"><span
-      class="header-section-number">5</span> 生成AIにマクロを作成させる</h1>
-      <p>ここからは、<strong>生成AIを用いてマクロを記述し</strong>、それを作成済みの<strong>「アドイン」に追加登録する手順</strong>について詳しく解説していきます。</p>
+      <h1 data-number="5" id="生成aiを利用してマクロを生成"><span
+      class="header-section-number">5</span> 生成AIを利用してマクロを生成</h1>
+      <p>ここからは、<strong>生成AIを用いてマクロを記述し</strong>、それを作成済みの<strong>「アドイン」に追加登録していく手順</strong>について詳しく解説していきます。</p>
       <h2 data-number="5.1" id="マクロ-vbaプログラム-の作成依頼プロンプト例-①"><span
       class="header-section-number">5.1</span> マクロ (VBAプログラム) の作成依頼プロンプト例 ①</h2>
       <p>たとえば「<strong>すべてのシートのカーソル位置をA1に移動する処理</strong>」のマクロを実装したいとき、生成AIには次のようなプロンプトを与えます。</p>
@@ -493,9 +558,9 @@ class="toc-section-number">8</span> 補足: マクロを利用するときの注
       <p>ここで「<strong>エクセル</strong>」や「<strong>VBAプログラム
       (あるいはマクロ)</strong>」といったキーワードは、プロンプトのなかに必ず含めるようにしてください。また「シート」や「A1
       (セル参照)」のような <span class="masked">エクセル固有の用語を正しく使って指示すること</span>
-      も重要なポイントとなります。</p>
-      <p>実際に試してみると、VBA プログラム (コード)
-      を生成してくれるはずです。ただし、<strong>上記のような簡素なプロンプトでは、</strong> <span
+      が重要なポイントとなります。</p>
+      <p>実際に上記のプロンプトを送信すれば、VBA プログラム (コード)
+      を生成してくれるはずです。ただし、<strong>このような簡素なプロンプトでは、</strong> <span
       class="masked">生成されるコードの内容にばらつき</span>
       がでやすかったり、<strong>アドインとして組み込むには不適切なコード</strong>
       (＝実行時エラーが発生したり、意図した動作をしなかったりするコード) が生成される可能性が
@@ -505,17 +570,18 @@ class="toc-section-number">8</span> 補足: マクロを利用するときの注
       <figcaption aria-hidden="true">img</figcaption>
       </figure>
       <p>これは、生成AIが <span class="masked">何を前提としてコードを書くべきか</span>
-      を明確に理解できていないまま
+      を明確に理解せぬまま
       (＝与えられないまま)、<strong>推測に基づいてコードを生成してしまうこと</strong>によるものです。一般的に「マクロ」と言うと、エクセルブック
       (<code>.xlsm</code> など)
       に記述するケースが多いため、生成AIもそれを前提にコードを生成することが考えられます。</p>
-      <p>しかし、そのようなコードは、アドインファイルに組み込んだとき、状況によっては正しく動作しないことがあります。</p>
+      <p>しかし、そのようなコードは、アドインファイルに組み込んだとき、(状況によっては)
+      正しく動作しないことがあります。</p>
       <h2 data-number="5.2" id="マクロ-vbaプログラム-の作成依頼プロンプト例-②"><span
       class="header-section-number">5.2</span> マクロ (VBAプログラム) の作成依頼プロンプト例 ②</h2>
       <p>以上のようなケースにおいても、ある程度の知識やスキルがあればコードを修正して使うことはできます。しかし、ここでは
       <span class="masked">プログラミングの経験がない利用者</span>
-      を前提にしています。そのため、生成AIには
-      <strong>あらかじめ十分な実行条件を含んだプロンプト</strong> を与えることが重要となります。</p>
+      を前提にしています。そのため、生成AIには「<strong>あらかじめ十分な実行条件を含んだプロンプト</strong>
+      を与えること」が重要となります。</p>
       <p>具体的には、次のようなプロンプトが推奨されます。</p>
       <pre><code># 指示  
 現在ユーザーが操作中の Excel のアクティブシート（またはその親ブック）を対象に、「#やりたいこと」で指定された処理を行う **VBA のサブルーチン** を生成してください。
@@ -553,7 +619,7 @@ class="toc-section-number">8</span> 補足: マクロを利用するときの注
       <span class="masked">#やりたいこと</span> の部分だけです。その他の部分は <strong>テンプレート
       (雛形) として、そのまま使ってください</strong>。</p>
       <p>実際に、上記のプロンプトの「<strong>#
-      やりたいこと</strong>」だけを以下の内容に差し替えて、生成AIに貼付けて、送信してみてください。生成AIから回答が生成されるはずです。</p>
+      やりたいこと</strong>」の内容を以下に差し替えて、生成AIに貼り付けて、送信してみてください。生成AIから回答が生成されるはずです。</p>
       <blockquote>
       <p>すべてのシートのカーソル位置をA1に揃えたい</p>
       </blockquote>
@@ -565,11 +631,12 @@ class="toc-section-number">8</span> 補足: マクロを利用するときの注
       </figure>
       <h2 data-number="5.3" id="アドインにマクロを追加する"><span
       class="header-section-number">5.3</span> アドインにマクロを追加する</h2>
-      <p>エクセルを起動して、空白のブックを新規作成してください
+      <p>エクセルを起動して「空白のブック」を新規作成してください
       (既存のファイルのオープンでも問題ありません)。</p>
       <p>「<strong>開発</strong>」タブから「<strong>Visual
       Basic</strong>」のアイコンをクリックして「VBAエディタ」を起動してください。あるいは
-      [Alt]+[F11] のショートカットで「<strong>VBAエディタ</strong>」を起動してください。</p>
+      <code>[Alt]+[F11]</code>
+      のショートカットで「<strong>VBAエディタ</strong>」を起動してください。</p>
       <p>次のように「<strong>マイアドイン.xlam</strong>」の「<strong>Module1</strong>」が選択されていることを確認して、先ほど記述した
       <code>Public Sub A1に乱数を書き込む処理()</code> ～ <code>End Sub</code>
       以降の行に、生成AIが出力したコードを貼り付けてください。</p>
@@ -599,19 +666,21 @@ class="toc-section-number">8</span> 補足: マクロを利用するときの注
       <figcaption aria-hidden="true">img</figcaption>
       </figure>
       <p>実際にエクセルブック (<code>Book1.xlsx</code>)
-      のほうで「<strong>このマクロが意図した動作をしているか</strong>」を確認してください。問題なく動作するこを確認できたら「<strong>VBAエディタ</strong>」の「保存<i class="fa-solid fa-floppy-disk"></i>」のボタンを押下してください。アドインファイルの更新内容が保存されます。</p>
+      のほうで「<strong>このマクロが意図した動作をしているか</strong>」を確認してください。問題なく動作することを確認できたら「<strong>VBAエディタ</strong>」の「保存
+      <i class="fa-solid fa-floppy-disk"></i>」のボタンを押下してください。アドインファイルの更新内容が保存されます。</p>
       <figure>
       <img src="figs/excel-addin-23.png" alt="img" />
       <figcaption aria-hidden="true">img</figcaption>
       </figure>
-      <h3 data-number="5.4.1" id="マクロの実行時エラーが発生したときは"><span
-      class="header-section-number">5.4.1</span> マクロの「実行時エラー」が発生したときは</h3>
+      <h3 data-number="5.4.1" id="もしマクロの実行時エラーが発生したときは"><span
+      class="header-section-number">5.4.1</span>
+      もし、マクロの「実行時エラー」が発生したときは…</h3>
       <p>VBAプログラムに問題があった場合、実行時に次のようなダイアログが表示されます。その場合は「<strong>OK</strong>」を押下してください。</p>
       <figure>
       <img src="figs/error-01.png" alt="img" />
       <figcaption aria-hidden="true">img</figcaption>
       </figure>
-      <p>上記ダイアログの「<strong>OK</strong>」を押下すると「<strong>中断</strong>」という状態になります。通常の編集モードに戻るためには、下図のように「停止マーク」のボタンを押下してください</p>
+      <p>上記ダイアログの「<strong>OK</strong>」を押下すると「<strong>中断</strong>」という状態になります。通常の編集モードに戻るためには、下図のように「停止マーク」のボタンを押下してください。</p>
       <figure>
       <img src="figs/error-02.png" alt="img" />
       <figcaption aria-hidden="true">img</figcaption>
@@ -619,23 +688,29 @@ class="toc-section-number">8</span> 補足: マクロを利用するときの注
       <p>また「継続」「終了」「デバッグ」「ヘルプ」のボタンを持ったダイアログが表示されたときは「<strong>終了</strong>」を選択してください。また、無限ループが生じた際は
       <code>Escキー</code> の押下で抜けることができます。</p>
       <h3 data-number="5.4.2" id="実行に失敗したり意図した動作をしないときは"><span
-      class="header-section-number">5.4.2</span> 実行に失敗したり、意図した動作をしないときは……</h3>
+      class="header-section-number">5.4.2</span> 実行に失敗したり、意図した動作をしないときは…</h3>
       <p>実行に失敗したり、意図した動作をしない場合は、もう一度、同じプロンプトを生成AIに与え、<strong>再生成されたコードに差し替えて実行してみること</strong>
       をお勧めします。</p>
-      <p>それでもエラーがつづく場合は、イミディエイトウィンドウに表示されるエラーメッセージの内容を、プロンプトに与えて修正依頼をすることで、問題が解決することもあります。</p>
+      <p>それでもエラーがつづく場合は「イミディエイトウィンドウに表示されるエラーメッセージの内容」を、プロンプトに与えて修正依頼をすることで、問題を解決したコードが生成されることもあります。</p>
       <figure>
       <img src="figs/excel-addin-24.png" alt="img" />
       <figcaption aria-hidden="true">img</figcaption>
       </figure>
+      <p>プロンプト例 (先のプロンプトにつづけて…)</p>
+      <blockquote>
+      <p>生成されたVBAプログラムを貼り付けて実行したのですが、以下のようなエラーが発生して意図する動作をしませんでした。注意深く慎重に改善してください。</p>
+      <p>(ここにエラーの状況を詳しく説明する文章)</p>
+      </blockquote>
       <h2 data-number="5.5" id="追加したマクロをリボンに登録"><span
       class="header-section-number">5.5</span> 追加したマクロをリボンに登録</h2>
       <p>エクセル (≠VBAエディタ)
-      の「<strong>ファイル</strong>」から「<strong>オプション</strong>」を選択し、「<strong>リボンのユーザー設定</strong>」から以下の手順で追加したマクロをリボンに登録してください。</p>
+      の「<strong>ファイル</strong>」から「<strong>オプション</strong>」を選択し、「<strong>リボンのユーザー設定</strong>」から以下の手順で追加したマクロ
+      (例えば <code>全シートのカーソルをA1に戻す</code> の処理) をリボンに登録してください。</p>
       <figure>
       <img src="figs/excel-addin-18.png" alt="img" />
       <figcaption aria-hidden="true">img</figcaption>
       </figure>
-      <p>次のようにリボンに登録され、任意のタイミングでマクロを呼び出すことができるようになります。</p>
+      <p>次のように追加したマクロがリボン上に登録され、任意のタイミングでマクロを呼び出すことができるようになります。</p>
       <figure>
       <img src="figs/excel-addin-19.png" alt="img" />
       <figcaption aria-hidden="true">img</figcaption>
@@ -645,30 +720,83 @@ class="toc-section-number">8</span> 補足: マクロを利用するときの注
       <img src="figs/excel-addin-25.png" alt="img" />
       <figcaption aria-hidden="true">img</figcaption>
       </figure>
-      <p>次のようにアイコンと表示名を変更することができます。</p>
+      <p>アイコンと表示名を変更した例を以下に示します。</p>
       <figure>
       <img src="figs/excel-addin-26.png" alt="img" />
       <figcaption aria-hidden="true">img</figcaption>
       </figure>
       <h2 data-number="5.6" id="さらにマクロを追加"><span class="header-section-number">5.6</span>
       さらにマクロを追加</h2>
-      <p>「Module1」が肥大化した場合は、次の手順でモジュールを追加し、そこにVBAプログラムを貼付けてください。</p>
+      <p>マクロを追加登録によって「<strong>Module1</strong>」が肥大化したときは、次の手順でモジュールを追加し、そこにVBAプログラムを貼付けてください。</p>
       <figure>
       <img src="figs/excel-addin-27.png" alt="img" />
       <figcaption aria-hidden="true">img</figcaption>
       </figure>
-      <p>以下では、新たに追加した「Module2」にVBAプログラムを記述します。</p>
+      <p>以下は、新たに追加した「<strong>Module2</strong>」に対してVBAプログラムを記述する画面です。</p>
       <figure>
       <img src="figs/excel-addin-28.png" alt="img" />
       <figcaption aria-hidden="true">img</figcaption>
       </figure>
-      <h1 data-number="6" id="演習"><span class="header-section-number">6</span> 演習</h1>
-      <p>以上で全般的な解説は終了です。演習として、次のようなマクロを生成AIに作成させ、アドインに登録してみてください。</p>
+      <h1 data-number="6" id="演習個別質問対応"><span class="header-section-number">6</span>
+      演習＆個別質問対応</h1>
+      <p>以上で基本的な解説は終了です。</p>
+      <p>学んだ内容を定着させるために、次のようなマクロ (VBAプログラム)
+      を生成AIに作成させて、アドインに追加、動作確認をしてみてください。</p>
       <ul>
       <li>すべてのシートについて、表示倍率を100%にする。</li>
-      <li>選択しているセルに対して、任意の表示形式 (例：小数点桁数を1に固定) と条件付き書式
-      (例：負の数は赤色表示) を同時設定する</li>
+      <li>選選択しているセルに対して、次の設定を行う
+      <ul>
+      <li>表示形式：小数点以下1桁までの数値表示に固定する</li>
+      <li>条件付き書式：負の数を赤色で表示する</li>
+      </ul></li>
+      <li>アクティブシートのなかで選択しているセルを含む行を非表示にする</li>
+      <li>アクティブなブックに存在するすべてのワークシートの名前を「SheetName」というシートを作成して出力したい。</li>
+      <li><strong>(その他、皆様の日常的なエクセル業務のなかでの定型作業)</strong></li>
       </ul>
+      <p>講師が巡回するので、ここまでの内容で分からないことや、相談したいことがあれば、気軽に声をかけてください。</p>
+      <h2 data-number="6.1" id="プロンプト記述のポイント"><span
+      class="header-section-number">6.1</span> プロンプト記述のポイント</h2>
+      <p>VBAコードを期待通りに生成させるためには、「何をどうしたいのか」を生成AIに<strong>正確に伝えることが重要</strong>です。以下のポイントを参考に、プロンプトを工夫してみてください。</p>
+      <h3 data-number="6.1.1" id="処理対象を明示する"><span
+      class="header-section-number">6.1.1</span> 1. 処理対象を明示する</h3>
+      <p>どの要素に対して操作を行うのかを、はっきり書きましょう。</p>
+      <ul>
+      <li>選択しているセルに対して…</li>
+      <li>アクティブシートに対して…</li>
+      <li>すべてのワークシートに対して…</li>
+      <li>選択中のグラフに対して…</li>
+      <li>アクティブシートが属するブック全体に対して…</li>
+      </ul>
+      <h3 data-number="6.1.2" id="具体例を入れる"><span class="header-section-number">6.1.2</span>
+      2. 具体例を入れる</h3>
+      <p>具体的なデータ例を示すことで、生成されるコードの精度が上がります。</p>
+      <ul>
+      <li>「令和7年04月01日(火)」のような日付形式で…</li>
+      <li>「0.890%」のような、小数点以下3桁のパーセント表示で…</li>
+      </ul>
+      <h3 data-number="6.1.3" id="目的や背景を伝える"><span
+      class="header-section-number">6.1.3</span> 3. 目的や背景を伝える</h3>
+      <p>なぜその処理を行いたいのかを書くことで、意図に沿ったコードが得られやすくなります。</p>
+      <ul>
+      <li>表示を整えて見やすくするために…</li>
+      <li>入力ミスを防ぐために…</li>
+      <li>分析時にフィルターで並べ替えやすくするために…</li>
+      </ul>
+      <h3 data-number="6.1.4" id="上書きか追加かを明確に"><span
+      class="header-section-number">6.1.4</span> 4. 「上書き」か「追加」かを明確に</h3>
+      <p>既存の設定を残したいのか、それともすべて置き換えたいのかは、明確に記述しましょう。</p>
+      <ul>
+      <li>既存の条件付き書式を <strong>そのまま残しつつ</strong>、新しい条件付き書式を
+      <strong>追加したい</strong></li>
+      <li>既存の条件付き書式を <strong>すべて削除して</strong>、新たに条件付き書式を
+      <strong>設定し直したい</strong></li>
+      <li>既存の表示形式はそのままで、<strong>条件付き書式のみ追加したい</strong></li>
+      </ul>
+      <h3 data-number="6.1.5" id="雛形を柔軟に活用"><span class="header-section-number">6.1.5</span>
+      5. 雛形を柔軟に活用</h3>
+      <p>プロンプトの <a href="#マクロ-vbaプログラム-の作成依頼プロンプト例-②">雛形</a>
+      を使えば、アドインに適した形式のコードが得られやすくなります。ただし、処理内容によっては提供した雛形が適さない場合もあります
+      (柔軟に使い分けてください)。</p>
       <h1 data-number="7" id="補足-マクロ有効ブックのオープン"><span
       class="header-section-number">7</span> 補足: マクロ有効ブックのオープン</h1>
       <p>自分以外が作成した<strong>マクロ有効ブック</strong>（＝マクロを含む Excel
@@ -712,6 +840,65 @@ class="toc-section-number">8</span> 補足: マクロを利用するときの注
       <p>つまり、マクロは <span class="masked">ユーザのドキュメントフォルダを全消去</span>
       したり、インターネットから <span class="masked">マルウェアをダウンロードして実行</span>
       したりすることも可能となっています。そのため、信頼できないファイルに付属するマクロの取扱い（実行許可の可否判断）には十分に注意してください。</p>
+      <h1 data-number="9" id="おまけ-notebooklm-で音声概要を生成する方法"><span
+      class="header-section-number">9</span> おまけ: NotebookLM で音声概要を生成する方法</h1>
+      <p>Google の NotebookLM
+      というウェブサービスを使って、<strong>任意のウェブサイトの音声概要を生成する手順</strong>
+      を紹介します（2025年5月に多言語対応した比較的新しい機能です）。なお、ここでは、ウェブサイトの
+      URL を入力して音声概要を作成する方法を紹介しますが、URL に限らず PDF
+      などのファイルを読み込ませて概要を生成することも可能です。</p>
+      <div class="note type-tips">
+      <p><strong>Google NotebookLM とは</strong></p>
+      <p>NotebookLM は、<strong>与えられた資料をもとに要約や説明を生成してくれる Google
+      のウェブサービス</strong>です。特徴的なのは、資料をもとに質問に答えてくれる「対話機能」がある点です。たとえば、「この文章のポイントは？」とか「登場する人物の関係を教えて」などと自然な言葉で聞くと、NotebookLM
+      が資料を読み取って回答してくれます。</p>
+      </div>
+      <h2 data-number="9.1" id="手順1-3"><span class="header-section-number">9.1</span> 手順1</h2>
+      <p>Google アカウント (個人のものでOK) にログインしている状況で<a
+      href="https://notebooklm.google.com/">https://notebooklm.google.com/</a>にアクセスしてください。利用規約が表示された場合、内容を確認して問題がなければ同意してください
+      (初回のみ)。</p>
+      <figure>
+      <img src="figs/notebook-lm-01.png" alt="img" />
+      <figcaption aria-hidden="true">img</figcaption>
+      </figure>
+      <h2 data-number="9.2" id="手順2-3"><span class="header-section-number">9.2</span> 手順2</h2>
+      <p>画面下部の「<strong>＋ノートブックを新規作成</strong>」のボタンを押下してください。</p>
+      <figure>
+      <img src="figs/notebook-lm-02.png" alt="img" />
+      <figcaption aria-hidden="true">img</figcaption>
+      </figure>
+      <h2 data-number="9.3" id="手順3-3"><span class="header-section-number">9.3</span> 手順3</h2>
+      <p>次のように「<strong>ウェブサイト</strong>」を選択してください。</p>
+      <figure>
+      <img src="figs/notebook-lm-03.png" alt="img" />
+      <figcaption aria-hidden="true">img</figcaption>
+      </figure>
+      <h2 data-number="9.4" id="手順4-1"><span class="header-section-number">9.4</span> 手順4</h2>
+      <p>要約したい「<strong>ウェブサイト</strong>」のURLをテキストボックスに貼り付けてください。例えば、貴社のウェブサイトのURLなどを入力してみと面白いかもしれません。URLを入力したら画面右下の「<strong>挿入</strong>」を押下してください。</p>
+      <figure>
+      <img src="figs/notebook-lm-04.png" alt="img" />
+      <figcaption aria-hidden="true">img</figcaption>
+      </figure>
+      <h2 data-number="9.5" id="手順5"><span class="header-section-number">9.5</span> 手順5</h2>
+      <p>指定したURLの情報が読み込まれるので、<strong>Studio</strong>
+      のなかの「音声概要」の「詳細な会話
+      2人のホスト」の「<strong>生成</strong>」を押下してください。ウェブブラウザのウィンドウ幅が狭い場合は、Studio
+      のパネルが隠れている可能性があります。</p>
+      <figure>
+      <img src="figs/notebook-lm-05.png" alt="img" />
+      <figcaption aria-hidden="true">img</figcaption>
+      </figure>
+      <ul>
+      <li>生成された音声ファイルはダウロードすることができます。</li>
+      <li>無料のGoogleアカウントであれば、<strong>1日3回</strong>まで「音声概要の生成」が利用できます
+      (使い切った場合は、翌日に再チャレンジしてください)。</li>
+      </ul>
+      <p>音声概要の生成は、NotebookLM のひとつの機能に過ぎません。YouTube では NotebookLM
+      の様々な活用方法が提案・されていますので、興味のある方は そちらをご覧ください。</p>
+      <ul>
+      <li><a
+      href="https://www.youtube.com/results?search_query=NotebookLM">YouTubeで「NotebookLM」を検索</a></li>
+      </ul>
       <!-- ---------------------------------------- -->
     </main>
 
