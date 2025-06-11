@@ -135,7 +135,8 @@ id="toc-おまけ-notebooklm-で音声概要を生成する方法"><span class="
       </ul></li>
       <li>卓上の「電源コンセント」はご自由にお使いください。</li>
       <li>休憩時間は設けませんので、適宜、水分補給や御手洗をご利用ください。</li>
-      <li>このウェブページのURLについては、セミナー終了後、<strong>社内で共有いただいて問題ございません</strong>。</li>
+      <li>このウェブページのURL ( https://takeshiwada1980.github.io/excel-macro/ )
+      については、セミナー終了後、<strong>社内で共有いただいて問題ございません</strong>。</li>
       </ul>
       <figure>
       <img src="figs/qr.png" alt="img" />
@@ -149,11 +150,11 @@ id="toc-おまけ-notebooklm-で音声概要を生成する方法"><span class="
       <p>このようなラジオ風の音声概要は、Googleの<a
       href="https://notebooklm.google.com/">NotebookLM</a>というAIサービスを利用して簡単に生成することができます。Googleアカウント
       (通常の無料アカウント) があれば、<strong>1日3回まで音声概要を生成すること</strong>ができます
-      (2025/06/11時点)。本資料の最後に<a
+      (2025.06.11 時点)。本資料の最後に<a
       href="#おまけ-notebooklm-で音声概要を生成する方法">簡単な利用手順</a>を掲載しています。</p>
       <h1 data-number="2" id="生成aiの利用準備"><span class="header-section-number">2</span>
       生成AIの利用準備</h1>
-      <p>普段からご利用の生成AIサービスがあれば、事前にウェブブラウザからログインしておいてください。なお、以下の生成AIについては、「アカウント登録なし」で利用することができます。</p>
+      <p>普段からご利用の生成AIサービスがあれば、事前にウェブブラウザからログインしておいてください。なお、以下の生成AIについては「アカウント登録なし」で利用することができます。</p>
       <ul>
       <li>ChatGPT <a href="https://openai.com/ja-JP/">https://openai.com/ja-JP/</a></li>
       <li>Gemini <a href="https://gemini.google.com">https://gemini.google.com</a></li>
@@ -177,7 +178,7 @@ id="toc-おまけ-notebooklm-で音声概要を生成する方法"><span class="
       </ul>
       <p>…のようにデフォルト動作を切り替えたいときは、以下の<strong>拡張機能</strong> (Chrome対応)
       が便利です。</p>
-      <p><a
+      <p><i class="fa-solid fa-puzzle-piece"></i> <a
       href="https://chromewebstore.google.com/detail/chatgpt-ctrl+enter-sender/gbncgdhklmnckojlibfhdadpfbcdbnch">ChatGPT
       Ctrl+Enter Sender</a></p>
       <blockquote>
@@ -202,6 +203,10 @@ id="toc-おまけ-notebooklm-で音声概要を生成する方法"><span class="
       class="masked">負の数は赤色表示</span>) を同時設定する</li>
       </ul>
       <p>繰り返しの多い定型作業については、多少面倒であってもマクロを作成しておくことで、長期的には「効率アップ」「ミス軽減」「ストレス軽減」につながります。是非、積極的に利用してみてください。</p>
+      <figure>
+      <img src="figs/image-02.png" alt="img" />
+      <figcaption aria-hidden="true">img</figcaption>
+      </figure>
       <p>なお、マクロとは「<strong>一連の操作や手続きを自動化する仕組み</strong>」を指すコンピュータ用語で、エクセルに限らず、「ワード」や「パワーポイント」などのマイクロソフトオフィス製品でも同様に設定・利用ができます。</p>
       <p><strong>(プロンプト例)</strong></p>
       <blockquote>
@@ -547,6 +552,10 @@ id="toc-おまけ-notebooklm-で音声概要を生成する方法"><span class="
       <h1 data-number="5" id="生成aiを利用してマクロを生成"><span
       class="header-section-number">5</span> 生成AIを利用してマクロを生成</h1>
       <p>ここからは、<strong>生成AIを用いてマクロを記述し</strong>、それを作成済みの<strong>「アドイン」に追加登録していく手順</strong>について詳しく解説していきます。</p>
+      <figure>
+      <img src="figs/image-03.png" alt="img" />
+      <figcaption aria-hidden="true">img</figcaption>
+      </figure>
       <h2 data-number="5.1" id="マクロ-vbaプログラム-の作成依頼プロンプト例-①"><span
       class="header-section-number">5.1</span> マクロ (VBAプログラム) の作成依頼プロンプト例 ①</h2>
       <p>たとえば「<strong>すべてのシートのカーソル位置をA1に移動する処理</strong>」のマクロを実装したいとき、生成AIには次のようなプロンプトを与えます。</p>
@@ -661,6 +670,11 @@ id="toc-おまけ-notebooklm-で音声概要を生成する方法"><span class="
       <figcaption aria-hidden="true">img</figcaption>
       </figure>
       </div>
+      <p><strong>(プロンプト例)</strong></p>
+      <blockquote>
+      <p>エクセルマクロにおける <code>Option Explicit</code>
+      とは何のために記述するものですか？生成AIにVBAを書かせる前提なのですが、書いておいた方がよいですか？</p>
+      </blockquote>
       <h2 data-number="5.4" id="追加したマクロの動作チェック"><span
       class="header-section-number">5.4</span> 追加したマクロの動作チェック</h2>
       <p>追加したマクロが正常に動作するかチェックします。以下のように追加した処理 (ここでは
@@ -696,14 +710,14 @@ id="toc-おまけ-notebooklm-で音声概要を生成する方法"><span class="
       class="header-section-number">5.4.2</span> 実行に失敗したり、意図した動作をしないときは…</h3>
       <p>実行に失敗したり、意図した動作をしない場合は、もう一度、同じプロンプトを生成AIに与え、<strong>再生成されたコードに差し替えて実行してみること</strong>
       をお勧めします。</p>
-      <p>それでもエラーがつづく場合は「イミディエイトウィンドウに表示されるエラーメッセージの内容」を、プロンプトに与えて修正依頼をすることで、問題を解決したコードが生成されることもあります。</p>
+      <p>それでもエラーがつづく場合は「<strong>イミディエイトウィンドウに表示されるエラーメッセージの内容</strong>」を、プロンプトに与えて修正依頼をすることで、問題を解決したコードが生成されることもあります。</p>
       <figure>
       <img src="figs/excel-addin-24.png" alt="img" />
       <figcaption aria-hidden="true">img</figcaption>
       </figure>
       <p>プロンプト例 (先のプロンプトにつづけて…)</p>
       <blockquote>
-      <p>生成されたVBAプログラムを貼り付けて実行したのですが、以下のようなエラーが発生して意図する動作をしませんでした。注意深く慎重に改善してください。</p>
+      <p>上記のVBAプログラムをエクセルのVBAエディタに貼り付けて実行したのですが、次のようなエラーが発生して意図する動作をしませんでした。注意深く慎重に改善してください。</p>
       <p>(ここにエラーの状況を詳しく説明する文章)</p>
       </blockquote>
       <h2 data-number="5.5" id="追加したマクロをリボンに登録"><span
@@ -747,8 +761,8 @@ id="toc-おまけ-notebooklm-で音声概要を生成する方法"><span class="
       <p>以上で基本的な解説は終了です。</p>
       <p>学んだ内容を定着させるために、次のようなマクロ (VBAプログラム)
       を生成AIに作成させて、アドインに追加、動作確認をしてみてください。</p>
-      <ul>
-      <li>すべてのシートについて、表示倍率を100%にする。</li>
+      <ol type="1">
+      <li>すべてのシートについて、表示倍率を100%にする</li>
       <li>選選択しているセルに対して、次の設定を行う
       <ul>
       <li>表示形式：小数点以下1桁までの数値表示に固定する</li>
@@ -757,8 +771,12 @@ id="toc-おまけ-notebooklm-で音声概要を生成する方法"><span class="
       <li>アクティブシートのなかで選択しているセルを含む行を非表示にする</li>
       <li>アクティブなブックに存在するすべてのワークシートの名前をクリップボードに取得したい</li>
       <li><strong>(その他、皆様の日常的なエクセル業務のなかでの定型作業)</strong></li>
-      </ul>
+      </ol>
       <p>講師が巡回するので、ここまでの内容で分からないことや、相談したいことがあれば、気軽に声をかけてください。</p>
+      <figure>
+      <img src="figs/image-01.png" alt="img" />
+      <figcaption aria-hidden="true">img</figcaption>
+      </figure>
       <h2 data-number="6.1" id="プロンプト記述のポイント"><span
       class="header-section-number">6.1</span> プロンプト記述のポイント</h2>
       <p>VBAコードを期待通りに生成させるためには、「何をどうしたいのか」を生成AIに<strong>正確に伝えることが重要</strong>です。以下のポイントを参考に、プロンプトを工夫してみてください。</p>
